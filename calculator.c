@@ -1,19 +1,98 @@
 #include <stdio.h>
 
-/* simple calculator */
+/* calculator; */
+
+void division()
+{
+    float firstNumber;
+    float secondNumber;
+
+    printf("\n\tEnter first number; ");
+    scanf("%f", &firstNumber);
+
+    printf("\n\tEnter second number; ");
+    scanf("%f", &secondNumber);
+
+    float qual = firstNumber / secondNumber;
+
+    printf("\n\tAnswer; %.2f", qual);
+}
+
+
+void multiply()
+{
+    int firstNumber;
+    int secondNumber;
+
+    printf("\n\tEnter first number; ");
+    scanf("%d", &firstNumber);
+
+    printf("\n\tEnter seond number; ");
+    scanf("%d", &secondNumber);
+
+    int qual = firstNumber * secondNumber;
+
+    printf("\n\tAnswer; %d", qual);
+}
+
+
+void subtraction()
+{
+    int firstNumber;
+    int secondNumber;
+
+    printf("\n\tEnter first number; ");
+    scanf("%d", &firstNumber);
+
+    printf("\n\tEnter second number; ");
+    scanf("%d", &secondNumber);
+
+    int qual = firstNumber - secondNumber;
+
+    printf("\n\tAsnwer; %d", qual);
+}
+
+
+void pules()
+{
+    int firstNumber;
+    int secondNumber;
+
+    printf("\n\tEnter first number; ");
+    scanf("%d", &firstNumber);
+
+    printf("\n\tEnter secondNumber; ");
+    scanf("%d", &secondNumber);
+
+    int qual = firstNumber + secondNumber;
+    
+    printf("\n\tAnswer; %d", qual);
+}
+
 
 int main()
 {
-    double num1;
-    double num2;
+    char operator;
 
-    printf("Enter an first number: ");
-    scanf("%lf", &num1);
-    
-    printf("Enter an first number: ");
-    scanf("%lf", &num2);
+    printf("\n\tcalculator; 2");
+    printf("\n\t+\n\t-\n\t*\n\t/\n\t");
 
-    printf("Answer: %f", num1 + num2);
+    scanf(" %c", &operator);
 
-    return 0;
+    if (operator == '+')
+    {
+        pules();
+    }
+    else if (operator == '-')
+    {
+        subtraction();
+    }
+    else if (operator == '*')
+    {
+        multiply();
+    }
+    else if (operator == '/')
+    {
+        division();
+    }
 }
