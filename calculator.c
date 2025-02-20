@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-/* calculator; */
+/* calculator */
 
 void divisionRemainder()
 {
     int firstNumber;
     int secondNumber;
 
-    printf("\n\tEnter first number; ");
+    printf("\n\tEnter first number: ");
     scanf("%d", &firstNumber);
 
-    printf("\n\tEnter second number; ");
+    printf("\n\tEnter second number: ");
     scanf("%d", &secondNumber);
 
     int qual = firstNumber % secondNumber;
@@ -23,10 +23,10 @@ void division()
     float firstNumber;
     float secondNumber;
 
-    printf("\n\tEnter first number; ");
+    printf("\n\tEnter first number: ");
     scanf("%f", &firstNumber);
 
-    printf("\n\tEnter second number; ");
+    printf("\n\tEnter second number: ");
     scanf("%f", &secondNumber);
 
     float qual = firstNumber / secondNumber;
@@ -40,10 +40,10 @@ void multiply()
     int firstNumber;
     int secondNumber;
 
-    printf("\n\tEnter first number; ");
+    printf("\n\tEnter first number: ");
     scanf("%d", &firstNumber);
 
-    printf("\n\tEnter seond number; ");
+    printf("\n\tEnter second number: ");
     scanf("%d", &secondNumber);
 
     int qual = firstNumber * secondNumber;
@@ -57,10 +57,10 @@ void subtraction()
     int firstNumber;
     int secondNumber;
 
-    printf("\n\tEnter first number; ");
+    printf("\n\tEnter first number: ");
     scanf("%d", &firstNumber);
 
-    printf("\n\tEnter second number; ");
+    printf("\n\tEnter second number: ");
     scanf("%d", &secondNumber);
 
     int qual = firstNumber - secondNumber;
@@ -74,10 +74,10 @@ void pules()
     int firstNumber;
     int secondNumber;
 
-    printf("\n\tEnter first number; ");
+    printf("\n\tEnter first number: ");
     scanf("%d", &firstNumber);
 
-    printf("\n\tEnter secondNumber; ");
+    printf("\n\tEnter secondNumber: ");
     scanf("%d", &secondNumber);
 
     int qual = firstNumber + secondNumber;
