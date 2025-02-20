@@ -2,6 +2,22 @@
 
 /* calculator; */
 
+void divisionRemainder()
+{
+    int firstNumber;
+    int secondNumber;
+
+    printf("\n\tEnter first number; ");
+    scanf("%d", &firstNumber);
+
+    printf("\n\tEnter second number; ");
+    scanf("%d", &secondNumber);
+
+    int qual = firstNumber % secondNumber;
+
+    printf("\n\tAnswer: %d", qual);
+}
+
 void division()
 {
     float firstNumber;
@@ -15,7 +31,7 @@ void division()
 
     float qual = firstNumber / secondNumber;
 
-    printf("\n\tAnswer; %.2f", qual);
+    printf("\n\tAnswer: %.2f", qual);
 }
 
 
@@ -32,7 +48,7 @@ void multiply()
 
     int qual = firstNumber * secondNumber;
 
-    printf("\n\tAnswer; %d", qual);
+    printf("\n\tAnswer: %d", qual);
 }
 
 
@@ -49,7 +65,7 @@ void subtraction()
 
     int qual = firstNumber - secondNumber;
 
-    printf("\n\tAsnwer; %d", qual);
+    printf("\n\tAsnwer: %d", qual);
 }
 
 
@@ -66,16 +82,16 @@ void pules()
 
     int qual = firstNumber + secondNumber;
     
-    printf("\n\tAnswer; %d", qual);
+    printf("\n\tAnswer: %d", qual);
 }
-
 
 int main()
 {
     char operator;
 
-    printf("\n\tcalculator; 2");
-    printf("\n\t+\n\t-\n\t*\n\t/\n\t");
+    printf("\n\tcalculator");
+    printf("\n\t+\n\t-\n\t*\n\t/\n\t%%\n");
+    printf("\tEnter operator: ");
 
     scanf(" %c", &operator);
 
@@ -94,5 +110,9 @@ int main()
     else if (operator == '/')
     {
         division();
+    }
+    else if (operator == '%')
+    {
+        divisionRemainder();
     }
 }
