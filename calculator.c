@@ -115,4 +115,8 @@ int main()
     {
         divisionRemainder();
     }
+    else
+    {
+        main();
+    }
 }
